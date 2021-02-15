@@ -1,4 +1,5 @@
 import math
+import matplotlib.pyplot as plt
 
 class Autocomplete:
     def __init__(self, filename):
@@ -84,6 +85,6 @@ class Autocomplete:
         ## TODO: Fill this in
         return ret
 
-a = Autocomplete("count_1w.txt")
+a = Autocomplete("words.txt")
 for m in a.all_matches("urs"):
     print(m)
